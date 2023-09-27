@@ -111,7 +111,7 @@ TEST(DiffVectorsTest, Test1) {
   std::vector<int> input2{3, 4, 5, 6, 7};
 
   PrintCollection(input1, "v1");
-  PrintCollection(input1, "v2");
+  PrintCollection(input2, "v2");
 
   // Expected result set
   std::set<int> expected{1, 2};

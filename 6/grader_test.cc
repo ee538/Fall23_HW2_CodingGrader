@@ -90,7 +90,7 @@ TEST(CreateHistogramTest, SimpleTree) {
   tree.Insert('C');
   tree.Insert('D');
   tree.Insert('A');
-  std::map<char, int> expected = {{'A', 1}, {'B', 1}, {'C', 1}, {'D', 1}};
+  std::map<char, int> expected = {{'A', 2}, {'B', 1}, {'C', 1}, {'D', 1}};
   std::map<char, int> actual = tree.CreateHistogram();
   EXPECT_EQ(expected, actual);
 }
